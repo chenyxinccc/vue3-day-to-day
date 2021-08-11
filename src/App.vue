@@ -1,11 +1,15 @@
+<!--
+ * @Author: chenyixin
+ * @Date: 2021-08-10 15:10:34
+ * @LastEditors: chenyixin
+ * @LastEditTime: 2021-08-10 17:28:16
+-->
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
+  <router-view />
 </template>
 
 <style lang="less">
@@ -18,8 +22,6 @@
 }
 
 #nav {
-  padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -28,5 +30,8 @@
       color: #42b983;
     }
   }
+}
+body {
+  margin: 0;
 }
 </style>
